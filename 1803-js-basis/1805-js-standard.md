@@ -115,6 +115,7 @@ while (i < myLikeColorsList.length) {
 #### 符号判断
 
 ```javascript
+//判断恒等
 3 === 3   // true
 3 === '3' // false
 //---
@@ -123,7 +124,7 @@ while (i < myLikeColorsList.length) {
 1 != '1'    // false
 1 != true   // false
 0 != false  // false
-//---
+//判断非恒等
 3 !== 3   // false
 3 !== '3' // true
 4 !== 3   // true
