@@ -21,11 +21,11 @@ res.render()
 
 送出一个JSON数据，无论是什么JSON的类型数据都可以。
 
-会通过`JSON.stringify()`来转换成JSON对象。
+会通过`JSON.stringify()`来转换成JSON。
 
 ###### `res.render(view [,locals][,callback])`
 
-生成一个页面，并送出对应的HTML。第一个参数是路径，第二个是对应的callback函数。
+渲染一个页面，并送出对应的HTML。第一个参数是路径，第二个是对应的callback函数。
 
 ---
 
