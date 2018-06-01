@@ -1,5 +1,7 @@
 # 08-Multiple choice questions and explain your choice
 
+[【10.8练习】](http://xugaoyang.com/post/59d95a38c182ef50e99111a8)
+
 问题:用自己的脑子做完这两个多选题，解释的时候使用你能想到的资源。
 
 Q1:

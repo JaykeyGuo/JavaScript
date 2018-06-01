@@ -1,5 +1,7 @@
 # 07-解释setTimeout的回调执行的原理
 
+[【10.7练习】](http://xugaoyang.com/post/59d89d46c182ef50e9911187)
+
 ```js
 function output() {
   var name = 'xiaoming';

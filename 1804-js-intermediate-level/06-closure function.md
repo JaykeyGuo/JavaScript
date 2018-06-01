@@ -1,5 +1,7 @@
 # 06-闭包函数认知
 
+[【10.6练习】](http://xugaoyang.com/post/59d724375706b322621783bc)
+
 ```js
 function main() {
   var name = 'xiaoming';

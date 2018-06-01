@@ -1,5 +1,7 @@
 # 05-变量提前声明的特点
 
+[【10.5练习】](http://xugaoyang.com/post/59d5acf609b7934a9f6b40cc)
+
 1. ```js
    console.log(name0);
    var name0 = 'xiaoming';
