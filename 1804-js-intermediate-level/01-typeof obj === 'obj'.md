@@ -1,4 +1,4 @@
-# 01-JS中阶练习
+# 01-对象判断
 
 #### [【10.1练习】](http://xugaoyang.com/post/59d4594184a6827ddebeafef)
 

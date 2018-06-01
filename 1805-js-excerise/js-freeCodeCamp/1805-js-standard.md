@@ -301,3 +301,15 @@ var addThree = newArray.map(function(val){
 console.log(addThree);
 ```
 
+#### Object对象
+
+```js
+Object.assign(target, ...sources);
+
+
+var obj = {
+    hello: 100;
+}
+Object.assign({}, obj);	//复制一个对象
+```
+
