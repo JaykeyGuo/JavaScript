@@ -44,6 +44,9 @@ JSON.stringify(anything);
 
 //几个等号的不同
 === == !== !===
+    
+//选择器
+array.filter(function(currentValue,index,arr), thisValue)
 ```
 
 #### 条件语句 
