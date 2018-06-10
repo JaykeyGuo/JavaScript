@@ -63,7 +63,7 @@ Array.push("foo");	//添加在最后一个
 ```js
 Array.prototype.notempty = function(){  
     for(var i=0; i<this.length; i++){  
-         if(this[i] == "" || typeof(this[i]) == "undefined"){  
+   		if(this[i] == "" || typeof(this[i]) == "undefined"){  
              this.splice(i,1);  
               i--;  
          }  
