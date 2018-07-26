@@ -50,7 +50,7 @@ Good-API 这一节主要是通过修改api，使得api的设计符合RESTful的�
 
 2. WebAPP 中的 package.json 在整个工程起到了什么作用？
 
-   *安装和使用说明，是整个项目的核心部分，调用资源的清单。*
+   *安装和使用说明，是整个项目的核心部分，调用资源的清单。`package.json`像是DNA，大脑是运行时。*
 
 3. 在 Express 中 Router 的价值，为什么 Router 作为一个中间件会将其格外的突出？
 
@@ -70,7 +70,7 @@ Good-API 这一节主要是通过修改api，使得api的设计符合RESTful的�
 
    *统一错误的价值在于“规范”，只要在别人能读懂的情况下，才能知道错误的原因，其实RESTful中就有对应的错误码规范，大部分的错误都会包含在其中。如果个性化“错误”，可能只有自己看懂，对应的价值不大，其次“浏览器”也需要读懂。*
 
-   **对应的工作原理还不太清楚。**
+   *两个错误处理是不同的，第一个是对于的err的处理函数，第二个是对于的兜底函数，也就是最后的关卡。如果没有这个兜底函数，框架也会棒我们兜底的。*
 
 7. 视图引擎是必须的吗？Express和 ejs的关系是什么？使用 ejs 是必须的吗？
 
@@ -78,7 +78,28 @@ Good-API 这一节主要是通过修改api，使得api的设计符合RESTful的�
 
 8. 在构建视图时，res.render 是如何定位到页面文件的？可以改变定位的路径吗？如果不用res.render() 该怎么构建页面？
 
-   *待我复习一下视频课程。*
+   ```js
+   // routes/index.js
+   var ejs = require('ejs');
+   var path = require('path');
+   var fs = require('fs');
+   
+   router.get('/', function() {
+       // 手动读入模板文件
+       var content = fs.readFileSync(path(__dirname, '../views/index.ejs'));
+   
+       var pathString = path.join(__dirname, '../views/index.ejs');
+       // 手动渲染引擎
+       var html = new EJS({url: pathString}).render({title: 'Hello World'});
+       res.send(html);
+   });
+   ```
+
+   等价于：
+
+   ```js
+   res.render('index', {title: 'hello world'});
+   ```
 
 9. ejs 中 <%- %> 和 <%= %> 的差异是什么？
 
