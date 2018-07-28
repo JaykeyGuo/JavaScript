@@ -161,14 +161,13 @@ readFile()
 
 ```js
 PostModel.find({}, {})
-  .exec() // 必须加上exec()返回的结果才是Promise，可以当成作业研究一下为什么需要它
+  .exec() // 加上exec()返回的结果才是Promise
   .then(post => {
     res.json({ postList: posts });
   })
   .catch(next);
 
 PostModel.save()
-  .save()
   .then(() => {
     res.end();
   })
