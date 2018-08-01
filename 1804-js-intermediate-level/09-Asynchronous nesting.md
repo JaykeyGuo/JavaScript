@@ -69,5 +69,24 @@ axios.get('/api/user?name=xugaoyang')
 1. 使用[Promise](https://dream4ever.github.io/JavaScript/promises/javascript-promises-for-dummies.html)
 2. [Promise更多](https://scotch.io/tutorials/javascript-promises-for-dummies)
 
+学习Promise之后来补上回答。
 
+```js
+axios.get('/api/user?name=xugaoyang')
+  	.then((response) => {
+    	return response.data;   
+ 	})
+    .then((data) => {
+    	return data._id;
+    })
+    .then((id) => {
+        axios.get('api/topics?user_id=' + id)
+            .then((response) => {
+            	return response.data;
+        	})
+			.catch(console.log);
+    })
+  	.catch(console.log);
+  });
+```
 

@@ -20,3 +20,16 @@ for (var i = 0; i < publicKeyList.length; count++) {
 
 ---
 
+```js
+var publicKeyList = ["code1-3443", "code2-f8759", "code3-196433"];
+var lengths = publicKeyList.map((item) => {
+    return item.length;
+})
+```
+
+#### 徐帅时间
+
+> 一般简洁的代码体现出两个点：
+>
+> - 简洁的语法。数组的遍历有很多种方式，for循环是最基础功能最单一，数组还提供了其他的遍历方式，功能能力都比for要强大，还简洁。
+> - 声明尽量少的变量。变量越多，看上去越清晰，但是可能带来变量污染的情况。比如：发生了命名相同的变量导致代码出问题。
