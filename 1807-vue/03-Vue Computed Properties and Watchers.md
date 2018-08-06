@@ -99,7 +99,9 @@ getter和setter的属性，其实和Jave中的访问器和修改器相似。
 
 ### Class 与 Style 绑带
 
-#### Vue + Bootstrap 例子
+#### 对象语法
+
+**Vue + Bootstrap 例子**
 
 ```html
 <div id="app" class="container">
@@ -128,12 +130,53 @@ var app = new Vue({
 })
 ```
 
-#### v-bind:class
+###### 通过计算属性来实现Class绑定
 
+```html
+<div v-bind:class="classObject"></div>
+```
+```js
+data: {
+  isActive: true,
+  error: null
+},
+computed: {
+  classObject: function () {
+    return {
+      active: this.isActive && !this.error,
+      'text-danger': this.error && this.error.type === 'fatal'
+    }
+  }
+}
+```
 
+####  数组语法
+
+通过数组来传递Class的值，直接可以传递不同的值，一一对应。
+
+```html
+<div v-bind:class="[isActive ? activeClass : '', errorClass]"></div>
+```
+
+可以在数组中使用三元表达式，对应的错误处理也很重要。
+
+#### `v-bind:style` 绑定CSS样式
+
+```html
+<div v-bind:style="styleObject"></div>
+```
+```js
+data: {
+  styleObject: {
+    color: 'red',
+    fontSize: '13px'
+  }
+}
+```
 
 ------
 
 > 单页面其实就是一个app。
 
 1. vuex与redux：一种路由处理的模式
+2. 看Vue文档
