@@ -184,6 +184,8 @@ Vue会将输入的html的代码自动转换为String，所以在需要显示HTMl
 
 ### 抽奖页面——实战
 
+[代码实例](https://github.com/xugy0926/learn-vue-sample/tree/master/lucky)
+
 1. 架构页面：使用Bootstrap
 2. 添加组件：list
 3. 使用Vue添加必要的数据
