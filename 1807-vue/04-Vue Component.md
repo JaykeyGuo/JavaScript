@@ -101,7 +101,7 @@ Vue.component('my-component'), {
 
 - 如何使用组件来实现数据的传输？
 - Vue如何update数据？
-- 学习myjson
+- [学习myjson](http://xugaoyang.com/post/5a6c1f298957a723cf8845e2)
 
 ------
 
