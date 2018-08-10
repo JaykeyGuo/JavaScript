@@ -32,7 +32,7 @@ methods: {
 
 ###### $emit 事件传递
 
-![image-20180810232447973](https://ws1.sinaimg.cn/large/006tNbRwgy1fu50rjjxlzj315x10pguw.jpg)
+![image-20180810234936541](https://ws4.sinaimg.cn/large/006tNbRwgy1fu51h9zyj7j311d0xktgd.jpg)
 
 //需要加深对事件传递的理解
 
