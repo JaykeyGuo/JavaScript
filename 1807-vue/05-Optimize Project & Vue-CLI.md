@@ -1,5 +1,7 @@
 # 05-项目优化 & Vue-CLI
 
+[TOC]
+
 ### TODO-List的优化
 
 1. Tag的设置
