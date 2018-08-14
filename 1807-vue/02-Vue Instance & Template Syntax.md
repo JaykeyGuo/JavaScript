@@ -279,7 +279,7 @@ Vue会将输入的html的代码自动转换为String，所以在需要显示HTMl
 
 感受到Vue的一个好处，HTML和JS是分离的，HTMl设计好之后，不需要再调整，只需要Focus在JS上就能实现对应的效果，而使用Vue的时候也不需要考虑HTML的情况。
 
-##### 一间部署Docker
+##### 一键部署Docker
 
 ```sh
 $ docker run --name some-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx

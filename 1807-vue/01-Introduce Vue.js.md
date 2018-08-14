@@ -34,7 +34,7 @@
 >
 > Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。
 
-重心在HTML于Data的交互过程中。
+重心在HTML与Data的交互过程中。
 
 ###### CDN 的使用
 
@@ -275,3 +275,13 @@ Vue.component('todo-item', {
 [Vue.js介绍](https://cn.vuejs.org/v2/guide/)
 
 [Flow](https://flow.org/)
+
+------
+
+### 学习清单
+
+> 1. Vue
+> 2. Vue-cli
+> 3. Webpack
+> 4. Eslint
+> 5. babel

@@ -92,12 +92,6 @@ div.container#app>div.list-group>ul>li.text-danger
 >
 > ——维基百科
 
-> babel：一个编译器
->
-> Eslint
->
-> webpack
-
 ###### 安装
 
 需要Node的版本^8.9.0
