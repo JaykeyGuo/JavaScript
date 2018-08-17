@@ -285,3 +285,5 @@ Vue.component('todo-item', {
 > 3. Webpack
 > 4. Eslint
 > 5. babel
+> 6. Vue Router
+> 7. Mint UI
