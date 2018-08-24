@@ -287,3 +287,4 @@ Vue.component('todo-item', {
 > 5. babel
 > 6. Vue Router
 > 7. Mint UI
+> 8. JWT
